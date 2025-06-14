@@ -20,7 +20,11 @@ st.markdown("""
 # About This Website section
 with st.expander("ℹ️ About This Website"):
     st.markdown("""
-    This web application predicts forest cover types for 30m x 30m land areas using a 7-class classification machine learning model. Forest type prediction is ecologically important because different trees create distinct habitats that support diverse wildlife communities. This interactive tool serves both educational and practical purposes, allowing users to explore machine learning predictions and understand relationships between environmental conditions and forest distributions.
+    This project addresses a 7-class classification problem that predicts forest cover type for 30m x 30m patches of land using cartographic variables and wilderness area designation. The problem is ecologically important because different tree species create distinct habitats that support diverse wildlife communities, making forest type prediction crucial for conservation and management efforts.
+    
+    The project serves dual purposes: scientific and educational. Scientifically, the model achieves strong performance (83% F1-macro score) with acceptable generalization capabilities (10% train-test gap), making it potentially suitable for ecological research applications. Additionally, it reduced the feature set from 54 to 11 and eliminated the need for the 40 soil type features in the original dataset. Educationally, the interactive web application allows users to explore machine learning predictions in real-time, visualize relationships between environmental variables and forest distributions, and gain insights into forest ecology through hands-on interaction with the model.
+    
+    The model and dataset are specifically based on Roosevelt National Forest in northern Colorado. Therefore, the predictions are tailored to this study area's unique environmental conditions and may not generalize to other geographic regions with different climatic patterns, soil types, or topography. This regional specificity makes the model particularly valuable for local forest management decisions while serving as an educational case study for understanding how environmental factors influence forest cover types in mountainous terrain.
     """)
     st.markdown("- Project Repository: https://github.com/drewgervang/roosevelt-national-forest-prediction-app")
 
