@@ -20,7 +20,7 @@ st.markdown("""
 # About This Website section
 with st.expander("ℹ️ About This Website"):
     st.markdown("""
-    This project addresses a 7-class classification problem that predicts forest cover type for 30m x 30m patches of land using cartographic variables and wilderness area designation. The problem is ecologically important because different tree species create distinct habitats that support diverse wildlife communities, making forest type prediction crucial for conservation and management efforts.
+    This project helps identify which types of trees grow in different areas of Roosevelt National Forest using a machine learning algorithm called CatBoost. Using topographic data such as elevation, slope, proximity to water sources, past fires, and roadways, as well as light availability and wilderness area designations, the model predicts which of 7 forest types is found in any given 30m x 30m patch of land. The problem is ecologically important because different tree species create distinct habitats that support diverse wildlife communities, making forest type prediction crucial for conservation and management efforts.
     
     The project serves dual purposes: scientific and educational. Scientifically, the model achieves strong performance (83% F1-macro score) with acceptable generalization capabilities (10% train-test gap), making it potentially suitable for ecological research applications. Additionally, it reduced the feature set from 54 to 11 and eliminated the need for the 40 soil type features in the original dataset. When comparing simplified models, two versions of CatBoost were tested: the first achieved 80.5% F1-macro score with a 6.8% performance difference between training and testing, while the second achieved 83.0% F1-macro with a 10% difference. The second model was chosen for this website because it performed better on new data even if it had a larger test/performance gap, but both versions are available in the GitHub repository. Educationally, the interactive web application allows users to explore machine learning predictions in real-time, visualize relationships between environmental variables and forest distributions, and gain insights into forest ecology through hands-on interaction with the model.
     
@@ -67,7 +67,7 @@ with col1:
     
     **2. Lodgepole Pine**  
     🏔️ Elevation: 2,169-3,413m  
-    Their serotinous cones are adapted so that their sealing resin melts in during a fire. These seeds are then in ideal conditions for germination with a bright open canopy and clear forest floor.
+    Their serotinous cones are adapted so that their sealing resin melts during a fire. These seeds are then in ideal conditions for germination with a bright open canopy and clear forest floor.
     
     **3. Ponderosa Pine**  
     🏔️ Elevation: 1,903-2,850m  
