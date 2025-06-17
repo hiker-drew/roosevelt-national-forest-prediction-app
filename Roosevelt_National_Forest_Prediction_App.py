@@ -22,11 +22,11 @@ with st.expander("ℹ️ About This Website"):
     st.markdown("""
     This project helps identify which types of trees grow in different areas of Roosevelt National Forest using a machine learning algorithm called CatBoost. Using topographic data such as elevation, slope, proximity to water sources, past fires, and roadways, as well as light availability and wilderness area designations, the model predicts which of 7 forest types is found in any given 30m x 30m patch of land. The problem is ecologically important because different tree species create distinct habitats that support diverse wildlife communities, making forest type prediction crucial for conservation and management efforts.
     
-    The project serves dual purposes: scientific and educational. Scientifically, the model achieves strong performance (83% F1-macro score) with acceptable generalization capabilities (10% train-test gap), making it potentially suitable for ecological research applications. Additionally, it reduced the feature set from 54 to 11 and eliminated the need for the 40 soil type features in the original dataset. With the full dataset, Logistic Regression, SVM, Random Forest, XGBoost, LightGBM and CatBoost were tried. CatBoost outperformed every other model besides LightGBM, which had significant overfitting issues even after regularization efforts so it wasn't used for this project. When comparing simplified models, two versions of CatBoost were tested: the first achieved 80.5% F1-macro score with a 6.8% performance difference between training and testing, while the second achieved 83.0% F1-macro with a 10% difference. The second model was chosen for this website because it performed better on new data even if it had a larger test/performance gap, but both versions are available in the GitHub repository. Educationally, the interactive web application allows users to explore machine learning predictions in real-time, visualize relationships between environmental variables and forest distributions, and gain insights into forest ecology through hands-on interaction with the model.
+    The project serves dual purposes: scientific and educational. Scientifically, the model achieves strong performance (83% F1-macro score) with acceptable generalization capabilities (10% train-test gap), making it potentially suitable for ecological research applications. Additionally, it reduced the feature set from 54 to 11 and eliminated the need for the 40 soil type features in the original dataset. With the full dataset, Logistic Regression, SVM, Random Forest, XGBoost, LightGBM and CatBoost were tried. CatBoost outperformed every other model besides LightGBM, which had significant overfitting issues even after regularization efforts so it wasn't used for this project. When comparing simplified models, two versions of CatBoost were tested: the first achieved 80.5% F1-macro score with a 6.8% performance difference between training and testing, while the second achieved 83.0% F1-macro with a 10% difference. The second model was chosen for this website because it performed better on new data for every class even if it had a larger test/performance gap, but both versions are available in the GitHub repository. Educationally, the interactive web application allows users to explore machine learning predictions in real-time, visualize relationships between environmental variables and forest distributions, and gain insights into forest ecology through hands-on interaction with the model.
     
     The model and dataset are specifically based on Roosevelt National Forest in northern Colorado. Therefore, the predictions are tailored to this study area's unique environmental conditions and may not generalize to other geographic regions with different climatic patterns or topography. This regional specificity makes the model particularly valuable for local forest management decisions while serving as an educational case study for understanding how environmental factors influence forest cover types in mountainous terrain.
     """)
-    st.markdown("- Project Repository: https://github.com/drewgervang/roosevelt-national-forest-prediction-app")
+    st.markdown("- Project Repository: https://github.com/hiker-drew/roosevelt-national-forest-prediction-app")
 
 # Information sections
 with st.expander("📚 Data Source and Source Materials"):
@@ -199,10 +199,10 @@ input_values[feature] = st.sidebar.slider(
 )
 
 # Hillshade features
-st.sidebar.subheader("☀️ Amount of Sunshine:")
+st.sidebar.subheader("☀️ Amount of Sunlight:")
 for feature in ['hillshade_9am', 'hillshade_noon']:
     min_val, max_val, default = FEATURE_RANGES[feature]
-    label = "Sunshine at 9am" if feature == 'hillshade_9am' else "Sunshine at Noon"
+    label = "Sunlight at 9am" if feature == 'hillshade_9am' else "Sunlight at Noon"
     input_values[feature] = st.sidebar.slider(
         label, min_val, max_val, default
     )
@@ -234,16 +234,16 @@ with col1:
         "Aspect": f"{input_values['aspect']}°",
         "Distance to Roadways": f"{input_values['horizontal_distance_to_roadways']} m",
         "Distance to Previous Fires": f"{input_values['horizontal_distance_to_fire_points']} m",
-        "Distance to Water Sources (Horizontal)": f"{input_values['horizontal_distance_to_hydrology']} m",
-        "Distance to Water Sources (Vertical)": f"{input_values['vertical_distance_to_hydrology']} m"
+        "Horizontal Distance To Water Sources": f"{input_values['horizontal_distance_to_hydrology']} m",
+        "Vertical Distance To Water Sources": f"{input_values['vertical_distance_to_hydrology']} m"
     }
     for key, value in terrain_data.items():
         st.write(f"**{key}:** {value}")
 
 with col2:
     st.markdown("#### ☀️ Light & Area Features:")
-    st.write(f"**Sunshine at 9am:** {input_values['hillshade_9am']}")
-    st.write(f"**Sunshine at Noon:** {input_values['hillshade_noon']}")
+    st.write(f"**Sunlight at 9am:** {input_values['hillshade_9am']}")
+    st.write(f"**Sunlight at Noon:** {input_values['hillshade_noon']}")
     st.write(f"**Wilderness Area:** {wilderness_selection}")
 
 # Prediction section
@@ -348,4 +348,4 @@ if st.button("Predict Forest Type", type="primary", use_container_width=True):
 # Footer
 st.markdown("---")
 st.markdown("🌲 Roosevelt National Forest Prediction App")
-st.markdown("- Project Repository: https://github.com/drewgervang/roosevelt-national-forest-prediction-app")
+st.markdown("- Project Repository: https://github.com/hiker-drew/roosevelt-national-forest-prediction-app")
