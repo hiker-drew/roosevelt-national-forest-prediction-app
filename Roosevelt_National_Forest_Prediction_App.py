@@ -194,7 +194,7 @@ for feature in ['horizontal_distance_to_roadways',
 feature = 'aspect'
 min_val, max_val, default = FEATURE_RANGES[feature]
 input_values[feature] = st.sidebar.slider(
-    "Slope Aspect - Compass Direction",
+    "Aspect - Slope Compass Direction",
     min_val, max_val, default
 )
 
