@@ -43,7 +43,7 @@ with st.expander("📚 Data Source and Source Materials"):
     
     3. **Ponderosa Pine** - [https://ucanr.edu/sites/forestry/Ecology/Identification/Ponderosa_Pine_Pinus_ponderosa/](https://ucanr.edu/sites/forestry/Ecology/Identification/Ponderosa_Pine_Pinus_ponderosa/)
     
-    4. **Cottonwood/Willow** - [https://www.deschuteslandtrust.org/news/blog/2019-blog-posts/cottonwood-benefits](https://www.deschuteslandtrust.org/news/blog/2019-blog-posts/cottonwood-benefits)
+    4. **Cottonwood/Willow** - [https://www.deschuteslandtrust.org/news/blog/2019-blog-posts/cottonwood-benefits](https://www.deschuteslandtrust.org/news/blog/2019-blog-posts/cottonwood-benefits) and [https://www.ndsu.edu/pubweb/chiwonlee/plsc368/student/papers98/willows.htm](https://www.ndsu.edu/pubweb/chiwonlee/plsc368/student/papers98/willows.htm)
     
     5. **Aspen** - [https://www.nationalforests.org/blog/tree-profile-aspen-so-much-more-than-a-tree](https://www.nationalforests.org/blog/tree-profile-aspen-so-much-more-than-a-tree)
     
@@ -63,7 +63,7 @@ with col1:
     st.markdown("""
     **1. Spruce/Fir**  
     🏔️ Elevation: 2,525-3,675m  
-    Typically found at higher elevations in cool, moist environments. The subalpine zone is cold year-round with most of the precipitation occurring as snow which may persist well into the summer.
+    Typically found at higher elevations in cool, moist environments. These subalpine areas experience cold temperatures year-round with heavy snowfall that often remains on the ground well into summer.
     
     **2. Lodgepole Pine**  
     🏔️ Elevation: 2,169-3,413m  
@@ -75,7 +75,7 @@ with col1:
     
     **4. Cottonwood/Willow**  
     🏔️ Elevation: 1,989-2,526m  
-    Found near water sources like streams and rivers. Adapted to flooding with ability to sprout from roots, stumps, and flood-buried trunks.
+    Both species are found along rivers and streams where broken branches can go downriver and form the roots of new trees.
     """)
 
 with col2:
@@ -86,11 +86,11 @@ with col2:
     
     **6. Douglas-fir**  
     🏔️ Elevation: 1,863-2,883m  
-    Can grow from mild maritime climate of the coast to the more severe weather of the Sierra Nevada. Important timber tree and is grown as a Christmas tree. Douglas-fir adapts to different slope aspects based on sunlight and moisture availability. Though the Rocky Mountain Douglas-fir are also versatile they are only found within the Rocky Mountains.
+    Adaptable to diverse climates from coastal maritime conditions to harsh mountain environments. Important timber tree and is grown as a Christmas tree. Douglas-fir adapts to different slope aspects based on sunlight and moisture availability. Though the Rocky Mountain Douglas-fir are also versatile they are only found within the Rocky Mountains.
     
     **7. Krummholz**  
     🏔️ Elevation: 2,870-3,849m  
-    At the very top of the subalpine treeline fierce winds, snow and ice, often bend trees into a krummholz form where they appear contorted by the wind and ice.
+    At alpine elevations, harsh conditions including strong winds and ice cause trees to grow in twisted, wind-sculpted forms known as krummholz at these altitudes.
     """)
 
 # Define the exact features used in your model
