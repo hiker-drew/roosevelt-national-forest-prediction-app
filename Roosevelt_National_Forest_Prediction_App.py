@@ -55,7 +55,7 @@ with st.expander("📚 Data Source and Source Materials"):
 st.markdown("---")
 
 st.markdown("## 🌲 Forest Types:")
-st.markdown("*(Elevations from this Roosevelt National Forest, Colorado)*")
+st.markdown("*(Elevations from Roosevelt National Forest, Colorado)*")
 
 # Forest type descriptions - moved to main page
 col1, col2 = st.columns(2)
