@@ -262,14 +262,6 @@ if st.button("Predict Forest Type", type="primary", use_container_width=True):
             # Create DataFrame with the exact feature names
             input_df = pd.DataFrame([feature_vector], columns=SELECTED_FEATURES)
             
-            # Debug: Show what we're sending to the model
-            with st.expander("🔍 Debug: Input Data"):
-                st.write("**Raw Feature Values:**")
-                for i, feature in enumerate(SELECTED_FEATURES):
-                    st.write(f"{feature}: {feature_vector[i]}")
-                st.write("**Input DataFrame Shape:**", input_df.shape)
-                st.dataframe(input_df)
-            
             # Make prediction directly without scaling
             prediction_raw = model.predict(input_df)
             
