@@ -224,7 +224,7 @@ st.markdown("---")
 
 # Display current configuration
 st.markdown("## ⚗️ Current Forest Configuration:")
-st.markdown("*Click on the >> in the top left and try adjusting the forest prediction environment to match what each forest type prefers! (hint: elevation is key).*")
+st.markdown("*Click on the >> in the top left and try adjusting the forest prediction environment to match what each forest type prefers! (hint: elevation is key)*")
 
 # Create a more readable display
 col1, col2 = st.columns(2)
