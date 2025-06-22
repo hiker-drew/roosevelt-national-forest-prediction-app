@@ -22,7 +22,7 @@ with st.expander("ℹ️ About This Website"):
     st.markdown("""
     This project helps identify which types of trees grow in different areas of Roosevelt National Forest using a machine learning algorithm called CatBoost. Using topographic data such as elevation, slope, proximity to water sources, past fires, and roadways, as well as light availability and wilderness area designations, the model predicts which of 7 forest types is found in any given 30m x 30m patch of land. Click on the >> in the top left and try adjusting the forest prediction environment to match what each forest type prefers! (hint: elevation is key). The problem is ecologically important because different tree species create distinct habitats that support diverse wildlife communities, making forest type prediction crucial for conservation and management efforts.
     
-    The project serves dual purposes: scientific and educational. Scientifically, the model achieves strong performance (83% F1-macro score), making it potentially suitable for ecological research and forest management applications. Additionally, it reduced the feature set from 54 to 11 and eliminated the need for the 40 soil type features in the original dataset due to lack of feature importance. With the full dataset, Logistic Regression, SVM, Random Forest, XGBoost, LightGBM and CatBoost were tried. CatBoost outperformed every other model besides LightGBM, which had significant overfitting issues even after regularization efforts so it wasn't used for this project. When comparing simplified models, two versions of CatBoost were tested: the first achieved 80.5% F1-macro score with a 6.8% performance difference between training and testing, while the second achieved 83.0% F1-macro with a 10% difference. The second model was selected because it performed better on test data for every class (in particular Lodgepole Pine and Douglas-fir with an F1 increase above 5%); however, both versions are available in the GitHub repository. Educationally, the interactive web application lets users explore how environmental factors influence forest types in real-time and learn about tree adaptations.
+    The project serves dual purposes: scientific and educational. Educationally, the interactive web app lets users explore how trees have adapted through trying to recreate the environments that they prefer in real-time. Scientifically, the model achieves strong performance (83% F1-macro score), making it potentially suitable for ecological research and forest management applications. Additionally, it reduced the feature set from 54 to 11 and eliminated the need for the 40 soil type features in the original dataset due to lack of feature importance. With the full dataset, Logistic Regression, SVM, Random Forest, XGBoost, LightGBM and CatBoost were tried. CatBoost outperformed every other model besides LightGBM, which had significant overfitting issues even after regularization efforts so it wasn't used for this project. When comparing simplified models, two versions of CatBoost were tested: the first achieved 80.5% F1-macro score with a 6.8% performance difference between training and testing, while the second achieved 83.0% F1-macro with a 10% difference. The second model was selected because it performed better on test data for every class (in particular Lodgepole Pine and Douglas-fir with an F1 increase above 5%); however, both versions are available in the GitHub repository.
     
     The model and dataset are specifically based on Roosevelt National Forest in northern Colorado. Therefore, the predictions are tailored to this study area's unique environmental conditions and may not generalize to other geographic regions with different climatic patterns or topography. This regional specificity makes the model particularly valuable for local forest management decisions while serving as an educational case study for understanding how environmental factors influence forest cover types in Roosevelt National Forest.
     """)
@@ -111,17 +111,17 @@ SELECTED_FEATURES = [
 
 # Feature ranges for UI sliders (min, max, default)
 FEATURE_RANGES = {
-    'elevation': (1863, 3849, 2752),
-    'horizontal_distance_to_roadways': (0, 6890, 1316),
-    'horizontal_distance_to_fire_points': (0, 6993, 1256),
-    'horizontal_distance_to_hydrology': (0, 1343, 180),
+    'elevation': (1863, 3849, 2856),
+    'horizontal_distance_to_roadways': (0, 6890, 3445),
+    'horizontal_distance_to_fire_points': (0, 6993, 3497),
+    'horizontal_distance_to_hydrology': (0, 1343, 672),
     'wilderness_area4': (0, 1, 0),
-    'hillshade_9am': (58, 254, 220),
-    'vertical_distance_to_hydrology': (-146, 554, 32),
-    'wilderness_area1': (0, 1, 0),
-    'hillshade_noon': (99, 254, 223),
+    'hillshade_9am': (58, 254, 156),
+    'vertical_distance_to_hydrology': (-146, 554, 204),
     'wilderness_area3': (0, 1, 0),
-    'aspect': (0, 360, 126),
+    'hillshade_noon': (99, 254, 177),
+    'wilderness_area1': (0, 1, 0),
+    'aspect': (0, 360, 180),
 }
 
 # Forest type mapping
