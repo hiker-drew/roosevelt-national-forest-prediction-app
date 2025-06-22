@@ -111,17 +111,17 @@ SELECTED_FEATURES = [
 
 # Feature ranges for UI sliders (min, max, default)
 FEATURE_RANGES = {
-    'elevation': (1863, 3849, 2752),
-    'horizontal_distance_to_roadways': (0, 6890, 1316),
-    'horizontal_distance_to_fire_points': (0, 6993, 1256),
-    'horizontal_distance_to_hydrology': (0, 1343, 180),
+    'elevation': (1863, 3849, 2856),
+    'horizontal_distance_to_roadways': (0, 6890, 3445),
+    'horizontal_distance_to_fire_points': (0, 6993, 3497),
+    'horizontal_distance_to_hydrology': (0, 1343, 672),
     'wilderness_area4': (0, 1, 0),
-    'hillshade_9am': (58, 254, 220),
-    'vertical_distance_to_hydrology': (-146, 554, 32),
+    'hillshade_9am': (58, 254, 156),
+    'vertical_distance_to_hydrology': (-146, 554, 204),
     'wilderness_area1': (0, 1, 0),
-    'hillshade_noon': (99, 254, 223),
+    'hillshade_noon': (99, 254, 177),
     'wilderness_area3': (0, 1, 0),
-    'aspect': (0, 360, 126),
+    'aspect': (0, 360, 180),
 }
 
 # Forest type mapping
