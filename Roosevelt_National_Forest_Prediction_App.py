@@ -224,6 +224,7 @@ st.markdown("---")
 
 # Display current configuration
 st.markdown("## ⚗️ Current Forest Configuration:")
+st.markdown("*Click on the >> in the top left and try adjusting the forest prediction environment to match what each forest type prefers! (hint: elevation is key).*")
 
 # Create a more readable display
 col1, col2 = st.columns(2)
@@ -246,8 +247,6 @@ with col2:
     st.write(f"**Sunlight at 9am:** {input_values['hillshade_9am']}")
     st.write(f"**Sunlight at Noon:** {input_values['hillshade_noon']}")
     st.write(f"**Wilderness Area:** {wilderness_selection}")
-
-st.markdown("*Click on the >> in the top left and try adjusting the forest prediction environment to match what each forest type prefers! (hint: elevation is key).*")
 
 # Prediction section
 st.markdown("### ✨ Press predict to classify forest:")
