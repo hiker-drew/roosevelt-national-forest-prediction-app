@@ -91,7 +91,7 @@ with col2:
     
     **7. Krummholz**  
     🏔️ Elevation: 2,870-3,849m  
-    At alpine elevations with harsh and icy winds, trees become a krummholz form where they grow in a flag shape sculpted by wind or are found being protected behind rocks.
+    At alpine elevations with harsh and icy winds, trees become a krummholz form where they grow in flag shapes sculpted by wind or are found being protected behind rocks.
 """)
 
 # Define the exact features used in your model
