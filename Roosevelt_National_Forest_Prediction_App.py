@@ -20,11 +20,11 @@ st.markdown("""
 # About This Website section
 with st.expander("ℹ️ About This Website"):
     st.markdown("""
-    This project helps identify which types of trees grow in different areas of Roosevelt National Forest using a machine learning algorithm called CatBoost. Using topographic data such as elevation, slope, proximity to water sources, past fires, and roadways, as well as light availability and wilderness area designations, the model predicts which of 7 forest types is found in any given 30m x 30m patch of land. Click on the >> in the top left and try adjusting the forest prediction environment to match what each forest type prefers! (hint: elevation is key). The problem is ecologically important because different tree species create distinct habitats that support diverse wildlife communities, making forest type prediction crucial for conservation and management efforts.
-    
-    The project serves dual purposes: scientific and educational. Educationally, the interactive web app lets users explore how trees have adapted through trying to recreate the environments that each tree prefers in real-time. Scientifically, the model achieves strong performance (83% F1-macro score), making it potentially suitable for ecological research and forest management applications. Additionally, it reduced the feature set from 54 to 11 and eliminated the need for the 40 soil type features in the original dataset due to lack of feature importance. With the full dataset, Logistic Regression, SVM, Random Forest, XGBoost, LightGBM and CatBoost were tried. CatBoost outperformed every other model besides LightGBM, which had significant overfitting issues even after regularization efforts so it wasn't used for this project. When comparing simplified models, two versions of CatBoost were tested: the first achieved 80.5% F1-macro score with a 6.8% performance difference between training and testing, while the second achieved 83.0% F1-macro with a 10% difference. The second model was selected because it performed better on test data for every class (in particular Lodgepole Pine and Douglas-fir with an F1 increase above 5%); however, both versions are available in the GitHub repository.
-    
-    The model and dataset are specifically based on Roosevelt National Forest in northern Colorado. Therefore, the predictions are tailored to this study area's unique environmental conditions and may not generalize to other geographic regions with different climatic patterns or topography. This regional specificity makes the model particularly valuable for local forest management decisions while serving as an educational case study for understanding how environmental factors influence forest cover types in Roosevelt National Forest.
+    This project helps identify which types of trees grow in different areas of Roosevelt National Forest using a machine learning algorithm called CatBoost. The website could be used as an educational tool for helping understand the relationship between what specific trees/forest types prefer and the environment they most likely live in. The model also performs well enough to be suitible for research or forest management. It achieved this by using topographic data such as elevation, slope, proximity to water sources, past fires, and roadways, as well as light availability and wilderness area designations in order to predict which of 7 forest types is found in any given 30m x 30m patch of land. The problem is ecologically important because different tree species create distinct habitats that support diverse wildlife communities, making forest type prediction crucial for conservation and management efforts. Click on the >> in the top left and try adjusting the forest prediction environment in order to match what each forest type prefers! (hint: elevation is key).
+
+    The CatBoost model choosen achieves strong performance (83% F1-macro score), making it potentially suitable for ecological research and forest management efforts. A reduced feature set from 54 to 11 features was used which also eliminated the need for the 40 soil type features in the original dataset due to lack of feature importance. With the full dataset, Logistic Regression, SVM, Random Forest, XGBoost, LightGBM and CatBoost were tried. CatBoost outperformed every model besides LightGBM, which had significant overfitting issues even after regularization efforts so it wasn't used for this project. When comparing models with the reduced feature set, two versions of CatBoost were tested: the first achieved 80.5% F1-macro score with a 6.8% performance difference between training and testing, while the second achieved 83.0% F1-macro with a 10% difference. The second model was choosen for this website because it performed better on test data for every class (in particular Lodgepole Pine and Douglas-fir with an F1 increase above 5%); however, both versions are available in the GitHub repository.
+
+    The model and dataset are specifically based on Roosevelt National Forest in northern Colorado. Therefore, the predictions are tailored to this study area's unique environmental conditions and may not generalize to other geographic regions with different micro-climates or topography. This level of precision makes the model much more suitble for local forest management decisions and research while also being able to be used as an educational tool for understanding how environmental factors influence forest cover types in Roosevelt National Forest.
     """)
     st.markdown("- Project Repository: https://github.com/hiker-drew/roosevelt-national-forest-prediction-app")
 
@@ -64,15 +64,15 @@ with col1:
     st.markdown("""
     **1. Spruce/Fir**  
     🏔️ Elevation: 2,525-3,675m  
-    Typically found at higher elevations in cool, moist environments. These subalpine areas experience cold temperatures year-round with heavy snowfall that often remains on the ground well into summer.
+    A multi-tree forest found in subalpine areas experience cold temperatures year-round where precipitation is usually snowfall and can even last into mid-summer.
     
     **2. Lodgepole Pine**  
     🏔️ Elevation: 2,169-3,413m  
-    Their serotinous cones are adapted so that their sealing resin melts during a fire. These seeds are then in ideal conditions for germination with a bright open canopy and clear forest floor.
+    Their serotinous cones are adapted so that their sealing resin melts during a fire. These seeds are then in ideal conditions for sprouting roots with a bright open canopy and clear forest floor.
     
     **3. Ponderosa Pine**  
     🏔️ Elevation: 1,903-2,850m  
-    Mature trees have thick, fire-resistant bark, open crowns, and self-pruning limbs that reduce fire damage.
+    Mature trees have thick bark, open crowns, and self-pruning limbs that help the tree's fire resistance in common forest fires.
     
     **4. Cottonwood/Willow**  
     🏔️ Elevation: 1,989-2,526m  
@@ -91,8 +91,8 @@ with col2:
     
     **7. Krummholz**  
     🏔️ Elevation: 2,870-3,849m  
-    At alpine elevations, harsh conditions including strong winds and ice cause trees to grow in twisted, wind-sculpted forms known as krummholz.
-    """)
+    At alpine elevations with harsh and icy winds, trees become a krummholz form where their leaves grow like a flag shape or could be protected behind rocks.
+""")
 
 # Define the exact features used in your model
 SELECTED_FEATURES = [
@@ -224,7 +224,7 @@ st.markdown("---")
 
 # Display current configuration
 st.markdown("## ⚗️ Current Forest Configuration:")
-st.markdown("*Click on the >> in the top left and try adjusting the forest prediction environment to match what each forest type prefers! (hint: elevation is key)*")
+st.markdown("*Click on the >> in the top left and try adjusting the forest prediction environment in order to match what each forest type prefers! (hint: elevation is key)*")
 
 # Create a more readable display
 col1, col2 = st.columns(2)
