@@ -64,7 +64,7 @@ with col1:
     st.markdown("""
     **1. Spruce/Fir**  
     🏔️ Elevation: 2,525-3,675m  
-    A multi-tree forest found in subalpine areas experience cold temperatures year-round where precipitation is usually snowfall and can even last into mid-summer.
+    A multi-tree forest found in subalpine areas experience cold temperatures year-round where precipitation is usually snowfall and can even last into summer.
     
     **2. Lodgepole Pine**  
     🏔️ Elevation: 2,169-3,413m  
