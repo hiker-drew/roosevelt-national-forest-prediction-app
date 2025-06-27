@@ -37,7 +37,7 @@ with st.expander("📚 Data Source and Source Materials"):
     
     **Forest Type Descriptions:**
     
-    1. **Spruce/Fir** - [https://conps.org/project/subalpine-mesic-meadow/](https://conps.org/project/subalpine-mesic-meadow/)
+    1. **Spruce/Fir** - [https://conps.org/project/subalpine-mesic-meadow/](test)
     
     2. **Lodgepole Pine** - [https://www.nps.gov/articles/wildland-fire-lodgepole-pine.htm](https://www.nps.gov/articles/wildland-fire-lodgepole-pine.htm)
     
@@ -45,7 +45,7 @@ with st.expander("📚 Data Source and Source Materials"):
     
     4. **Cottonwood/Willow** - [https://www.deschuteslandtrust.org/news/blog/2019-blog-posts/cottonwood-benefits](https://www.deschuteslandtrust.org/news/blog/2019-blog-posts/cottonwood-benefits) and [https://www.ndsu.edu/pubweb/chiwonlee/plsc368/student/papers98/willows.htm](https://www.ndsu.edu/pubweb/chiwonlee/plsc368/student/papers98/willows.htm)
     
-    5. **Aspen** - [https://www.nationalforests.org/blog/tree-profile-aspen-so-much-more-than-a-tree](https://www.nationalforests.org/blog/tree-profile-aspen-so-much-more-than-a-tree)
+    5. **Aspen** - [https://www.nationalforests.org/blog/tree-profile-aspen-so-much-more-than-a-tree](https://www.nationalforests.org/blog/tree-profile-aspen-so-much-more-than-a-tree) and [https://www.mdpi.com/1999-4907/15/2/298](https://www.mdpi.com/1999-4907/15/2/298)
     
     6. **Douglas-fir** - [https://ucanr.edu/sites/forestry/Ecology/Identification/Douglas-fir/](https://ucanr.edu/sites/forestry/Ecology/Identification/Douglas-fir/) and [https://www.fs.usda.gov/database/feis/plants/tree/psemeng/all.html](https://www.fs.usda.gov/database/feis/plants/tree/psemeng/all.html)
     
@@ -83,7 +83,7 @@ with col2:
     st.markdown("""
     **5. Aspen**  
     🏔️ Elevation: 2,482-3,007m  
-    Deciduous trees known for their vibrant fall colors grow in large clonal colonies connected by shared root systems, making each grove a single organism. A pioneer species that quickly colonizes burned areas, but also requires abundant sunshine.
+    Deciduous trees known for their vibrant fall colors grow in large clonal colonies connected by shared root systems, making each grove a single organism. A pioneer species that quickly colonizes burned areas, but also requires abundant sunshine and are favored along roads.
     
     **6. Douglas-fir**  
     🏔️ Elevation: 1,863-2,883m  
