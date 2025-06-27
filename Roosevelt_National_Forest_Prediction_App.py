@@ -37,19 +37,19 @@ with st.expander("📚 Data Source and Source Materials"):
     
     **Forest Type Descriptions:**
     
-    1. **Spruce/Fir** - [test](https://conps.org/project/subalpine-mesic-meadow/)
+    1. **Spruce/Fir** - [Colorado Native Plant Society](https://conps.org/project/subalpine-mesic-meadow/)
     
-    2. **Lodgepole Pine** - [https://www.nps.gov/articles/wildland-fire-lodgepole-pine.htm](https://www.nps.gov/articles/wildland-fire-lodgepole-pine.htm)
+    2. **Lodgepole Pine** - [National Park Service](https://www.nps.gov/articles/wildland-fire-lodgepole-pine.htm) and [Colorado State Forest Service](https://csfs.colostate.edu/forests-trees/forest-types/lodgepole-pine/)
     
-    3. **Ponderosa Pine** - [https://ucanr.edu/sites/forestry/Ecology/Identification/Ponderosa_Pine_Pinus_ponderosa/](https://ucanr.edu/sites/forestry/Ecology/Identification/Ponderosa_Pine_Pinus_ponderosa/)
+    3. **Ponderosa Pine** - [University of California Agriculture and Natural Resources](https://ucanr.edu/sites/forestry/Ecology/Identification/Ponderosa_Pine_Pinus_ponderosa/)
     
-    4. **Cottonwood/Willow** - [https://www.deschuteslandtrust.org/news/blog/2019-blog-posts/cottonwood-benefits](https://www.deschuteslandtrust.org/news/blog/2019-blog-posts/cottonwood-benefits) and [https://www.ndsu.edu/pubweb/chiwonlee/plsc368/student/papers98/willows.htm](https://www.ndsu.edu/pubweb/chiwonlee/plsc368/student/papers98/willows.htm)
+    4. **Cottonwood/Willow** - [Deschutes Land Trust](https://www.deschuteslandtrust.org/news/blog/2019-blog-posts/cottonwood-benefits) and [North Dakota State University](https://www.ndsu.edu/pubweb/chiwonlee/plsc368/student/papers98/willows.htm)
     
-    5. **Aspen** - [https://www.nationalforests.org/blog/tree-profile-aspen-so-much-more-than-a-tree](https://www.nationalforests.org/blog/tree-profile-aspen-so-much-more-than-a-tree) and [https://www.mdpi.com/1999-4907/15/2/298](https://www.mdpi.com/1999-4907/15/2/298)
+    5. **Aspen** - [National Forest Foundation](https://www.nationalforests.org/blog/tree-profile-aspen-so-much-more-than-a-tree) and [Marchais et al. (2024)](https://www.mdpi.com/1999-4907/15/2/298)
     
-    6. **Douglas-fir** - [https://ucanr.edu/sites/forestry/Ecology/Identification/Douglas-fir/](https://ucanr.edu/sites/forestry/Ecology/Identification/Douglas-fir/) and [https://www.fs.usda.gov/database/feis/plants/tree/psemeng/all.html](https://www.fs.usda.gov/database/feis/plants/tree/psemeng/all.html)
+    6. **Douglas-fir** - [University of California Agriculture and Natural Resources](https://ucanr.edu/sites/forestry/Ecology/Identification/Douglas-fir/) and [US Forest Service](https://www.fs.usda.gov/database/feis/plants/tree/psemeng/all.html)
     
-    7. **Krummholz** - [https://conps.org/project/subalpine-mesic-meadow/](https://conps.org/project/subalpine-mesic-meadow/)
+    7. **Krummholz** - [Colorado Native Plant Society](https://conps.org/project/subalpine-mesic-meadow/)
     """)
 
 st.markdown("---")
@@ -68,7 +68,7 @@ with col1:
     
     **2. Lodgepole Pine**  
     🏔️ Elevation: 2,169-3,413m  
-    Their serotinous cones are adapted so that their sealing resin melts during a fire. These seeds are then in ideal conditions for sprouting roots with a bright open canopy and clear forest floor.
+    Their serotinous cones are adapted so that their sealing resin melts during a fire. These seeds are then in ideal conditions for germination, sprouting roots with a bright open canopy and clear forest floor. A Lodgepole Pine's cone can wait decades for a chance for their seeds to take root.
     
     **3. Ponderosa Pine**  
     🏔️ Elevation: 1,903-2,850m  
