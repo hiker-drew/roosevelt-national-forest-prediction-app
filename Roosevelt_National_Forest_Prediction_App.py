@@ -37,7 +37,7 @@ with st.expander("📚 Data Source and Source Materials"):
     
     **Forest Type Descriptions:**
     
-    1. **Spruce/Fir** - [https://conps.org/project/subalpine-mesic-meadow/](test)
+    1. **Spruce/Fir** - [test](https://conps.org/project/subalpine-mesic-meadow/)
     
     2. **Lodgepole Pine** - [https://www.nps.gov/articles/wildland-fire-lodgepole-pine.htm](https://www.nps.gov/articles/wildland-fire-lodgepole-pine.htm)
     
