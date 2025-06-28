@@ -33,7 +33,7 @@ with st.expander("📚 Data Source and Source Materials"):
     st.write("""
     **Primary Data Source:**
     
-    Forest cover type dataset recorded in Roosevelt National Forest (north central Colorado): Bache, K. & Lichman, M. (2013). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science with the data source being the US Forest Service & US Geological Survey and downloaded from a Kaggel compition - [Kaggle](https://www.kaggle.com/competitions/forest-cover-type-prediction/data?select=test.csv)
+    Forest cover type dataset recorded in Roosevelt National Forest (north central Colorado). Bache, K. & Lichman, M. (2013). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science. Data source: US Forest Service & US Geological Survey. Downloaded from Kaggle competition. - [Kaggle](https://www.kaggle.com/competitions/forest-cover-type-prediction/data?select=test.csv)
     
     **Forest Type Descriptions:**
     
