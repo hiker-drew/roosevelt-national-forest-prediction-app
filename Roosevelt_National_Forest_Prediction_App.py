@@ -26,14 +26,14 @@ with st.expander("ℹ️ About This Website"):
 
     The model and dataset are specifically based on Roosevelt National Forest in northern Colorado. Therefore, the predictions are tailored to this study area's unique environmental conditions and may not generalize to other geographic regions with different micro-climates or topography. This level of precision makes the model more suitble for local forest management decisions and research while also being able to be used as an educational tool for understanding how environmental factors influence forest cover types in Roosevelt National Forest.
     """)
-    st.markdown("- Project Repository: https://github.com/hiker-drew/roosevelt-national-forest-prediction-app")
+    st.markdown("- Project Repository: [GitHub](https://github.com/hiker-drew/roosevelt-national-forest-prediction-app)")
 
 # Information sections
 with st.expander("📚 Data Source and Source Materials"):
     st.write("""
     **Primary Data Source:**
     
-    Forest cover type dataset recorded in Roosevelt National Forest (north central Colorado): Bache, K. & Lichman, M. (2013). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science with the data source being the US Forest Service & US Geological Survey and downloaded from a Kaggel compition - [Kaggle compition](https://www.kaggle.com/competitions/forest-cover-type-prediction/data?select=test.csv)
+    Forest cover type dataset recorded in Roosevelt National Forest (north central Colorado): Bache, K. & Lichman, M. (2013). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science with the data source being the US Forest Service & US Geological Survey and downloaded from a Kaggel compition - [Kaggle](https://www.kaggle.com/competitions/forest-cover-type-prediction/data?select=test.csv)
     
     **Forest Type Descriptions:**
     
@@ -342,4 +342,4 @@ if st.button("Predict Forest Type", type="primary", use_container_width=True):
 # Footer
 st.markdown("---")
 st.markdown("🌲 Roosevelt National Forest Prediction App")
-st.markdown("- Project Repository: https://github.com/hiker-drew/roosevelt-national-forest-prediction-app")
+st.markdown("- Project Repository: [GitHub](https://github.com/hiker-drew/roosevelt-national-forest-prediction-app)")
