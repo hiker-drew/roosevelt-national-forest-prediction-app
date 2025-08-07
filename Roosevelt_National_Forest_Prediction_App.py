@@ -35,7 +35,7 @@ with st.expander("📚 Data Source and Source Materials"):
     
     **Forest Type Descriptions:**
     
-    1. **Spruce/Fir** - [Colorado Native Plant Society](https://conps.org/project/subalpine-mesic-meadow/)
+    1. **Spruce/Fir** - [Colorado Native Plant Society](https://conps.org/project/subalpine-mesic-meadow/) and [Colorado Climate Center, Colorado State University](https://climate.colostate.edu/climate_long.html)
     
     2. **Lodgepole Pine** - [National Park Service](https://www.nps.gov/articles/wildland-fire-lodgepole-pine.htm) and [Colorado State Forest Service](https://csfs.colostate.edu/forests-trees/forest-types/lodgepole-pine/)
     
@@ -62,7 +62,7 @@ with col1:
     st.markdown("""
     **1. Spruce/Fir**  
     🏔️ Elevation: 2,525-3,675m  
-    A multi-tree forest found in subalpine areas, experience cold temperatures year-round where precipitation is usually snowfall and can even last into summer.
+    A multi-tree forest found in subalpine areas, experience cold temperatures year-round where precipitation is usually snowfall and can even last into July and August.
     
     **2. Lodgepole Pine**  
     🏔️ Elevation: 2,169-3,413m  
